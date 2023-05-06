@@ -163,7 +163,9 @@ def RYANS(link):
         price =price.replace("Tk", "")
         price =price.replace(" ", "")
         lapprice.append(price)
-        
+
+x=slice(820)
+lapprice =lapprice[x]        
 
 link = "https://www.ryanscomputers.com/category/laptop-all-laptop"
 link2 ="https://www.ryanscomputers.com/category/laptop-all-laptop?page=2"
@@ -203,8 +205,13 @@ RYANS(link15)
 RYANS(link16)
 
 
-
+x=slice(1121)
+lapname=lapname[x]
 
 print(len(lapname))
 print(len(lapprice))
+
+arr=[lapname,lapprice]
+comb=dict(arr)
+print(comb)
 #final
