@@ -13,7 +13,7 @@ lapname = []
 lapprice = []
 
 
-def selectName(link):
+def ryans(link):
 
     html_texts = requests.get(link).text
 
@@ -64,22 +64,22 @@ link16 ="https://www.ryanscomputers.com/category/laptop-all-laptop?page=16"
 
  
 
-selectName(link)
-selectName(link2)
-selectName(link3)
-selectName(link4)
-selectName(link5)
-selectName(link6)
-selectName(link7)
-selectName(link8)
-selectName(link9)
-selectName(link10)
-selectName(link11)
-selectName(link12)
-selectName(link13)
-selectName(link14)
-selectName(link15)
-selectName(link16)
+ryans(link)
+ryans(link2)
+ryans(link3)
+ryans(link4)
+ryans(link5)
+ryans(link6)
+ryans(link7)
+ryans(link8)
+ryans(link9)
+ryans(link10)
+ryans(link11)
+ryans(link12)
+ryans(link13)
+ryans(link14)
+ryans(link15)
+ryans(link16)
 
 
 
