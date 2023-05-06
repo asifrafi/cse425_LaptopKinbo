@@ -29,6 +29,8 @@ def StarTech(l):
         for li in ln.find_all("span"):
             price = li.text
             priceN =price.replace("৳", "") # do not need money sign since it will mess up future works
+            priceN =priceN.replace(",", "") # do not need money sign since it will mess up future works
+            priceN =priceN.replace("TBA", "0") # do not need money sign since it will mess up future works
             
             lapprice.append(priceN)
 
@@ -85,6 +87,8 @@ def techland(l):
         for li in ln.find_all("span"):
             price = li.text
             priceN =price.replace("৳", "") # do not need money sign since it will mess up future works
+            priceN =price.replace(",", "") # do not need money sign since it will mess up future works
+            
             
             lapprice.append(priceN)
 
@@ -163,7 +167,9 @@ def RYANS(link):
         price = ln.text
         price =price.replace("Tk", "")
         price =price.replace(" ", "")
-        lapprice.append(price)
+        priceN =price.replace(",", "") # do not need money sign since it will mess up future works
+            
+        lapprice.append(priceN)
 
 
 link = "https://www.ryanscomputers.com/category/laptop-all-laptop"
