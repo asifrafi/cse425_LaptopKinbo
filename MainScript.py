@@ -134,3 +134,4 @@ techland(link)
 
 print(lapname)
 print(lapprice)
+#final
