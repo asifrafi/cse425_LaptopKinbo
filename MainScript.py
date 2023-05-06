@@ -219,5 +219,7 @@ comb=dict(zip(lapname,lapprice))
 myclient = pymongo.MongoClient("mongodb+srv://asiflogin:asif321@cluster0.scqzz.mongodb.net/?retryWrites=true&w=majority")
 mydb = myclient["CSE425"]
 mycol = mydb["laptopKinbo"]
-mycol.insert_one(comb)
+for x in comb:
+    mycol.insert_one(comb[x])
+
 #final
