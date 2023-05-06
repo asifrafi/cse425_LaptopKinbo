@@ -4,6 +4,7 @@ import requests
 import re
 import openpyxl
 from openpyxl import load_workbook
+import json
 
 link = "https://www.startech.com.bd/laptop-notebook/laptop"
 
@@ -220,6 +221,7 @@ myclient = pymongo.MongoClient("mongodb+srv://asiflogin:asif321@cluster0.scqzz.m
 mydb = myclient["CSE425"]
 mycol = mydb["laptopKinbo"]
 for x in comb:
-    mycol.insert_one(comb[x])
+    jsonObject= json.dumps(comb[x], indent = 4) 
+    mycol.insert_one(jsonObject)
 
 #final
