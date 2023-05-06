@@ -17,7 +17,7 @@ html_texts = requests.get(link).text
 soup = BeautifulSoup(html_texts, 'lxml')
 laptop_Names = soup.find_all('div', class_='name')
 laptop_price = soup.find_all('div', class_='price')
-#test
+#techland working
 for ln in laptop_Names:
     for li in ln.find_all("a"):
         name = li.text
