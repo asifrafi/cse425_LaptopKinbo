@@ -205,6 +205,6 @@ RYANS(link16)
 
 
 
-print(lapname.len())
-print(lapprice.len())
+print(len(lapname))
+print(len(lapprice))
 #final
