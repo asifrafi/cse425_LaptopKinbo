@@ -4,7 +4,11 @@
 
 
 ## Please Read This MarkDown File before running Laptop Kinbo
-
+#### Tech Stack
+* Frontend: React (Next.js)[Proposed]
+* Backend: Express.js, Node.js [Proposed]
+* Database: MongoDB 
+* Script: Python,PyMongo,BeautifulSoup4
 
 <p style="font-size:140%;text-align: left;font-weight:bold;font-family:times">Operating Environments</p>
 <p style="text-align: left;font-family:arial;">
@@ -19,6 +23,7 @@
 [Install Node JS](https://nodejs.org/en/)
 
 [Install NPM](https://www.npmjs.com/)
+
 
 
 #### Contributor
