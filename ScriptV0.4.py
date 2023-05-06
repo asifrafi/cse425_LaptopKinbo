@@ -85,6 +85,6 @@ RYANS(link16)
 
 
 
-print(lapname)
-print(lapprice)
-
+print(len(lapname))
+print(len(lapprice)) 
+#simanta please fix this bug lapname and lap price size doesn't match
