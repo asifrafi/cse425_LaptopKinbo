@@ -3,7 +3,7 @@
 
 
 
-## Please Read This MarkDown File before running NSU Ovijog
+## Please Read This MarkDown File before running Laptop Kinbo
 
 
 <p style="font-size:140%;text-align: left;font-weight:bold;font-family:times">Operating Environments</p>
