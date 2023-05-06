@@ -80,7 +80,7 @@ techland(link)
 
 #print(lapname)
 #print(lapprice)
-x=slice(20)
-#lapprice =lapprice[x]
+x=slice(440)
+lapprice =lapprice[x]
 print(len(lapname))
 print(len(lapprice))
