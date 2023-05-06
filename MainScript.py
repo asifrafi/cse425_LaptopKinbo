@@ -215,8 +215,6 @@ lapname=lapname[x]
 
 lapprice=lapprice[x]
 
-print(len(lapname))
-print(len(lapprice))
 
 
 comb=dict(zip(lapname,lapprice))
@@ -231,5 +229,5 @@ for x in range(0,1110):
     lapdict = {"name":lapname[int(x)],"price":lapprice[int(x)]}
     mycol.insert_one(lapdict)
 
-print(lapprice[10])
+print("Done!")
 #final
