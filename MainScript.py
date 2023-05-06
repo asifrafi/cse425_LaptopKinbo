@@ -226,7 +226,7 @@ mydb = myclient["CSE425"]
 mycol = mydb["laptopKinbo"] 
 
 for x in range(0,1110):
-    lapdict = {"name":lapname[int(x)],"price":lapprice[int(x)]}
+    lapdict = {"name":lapname[int(x)],"price":int(lapprice[int(x)])}
     mycol.insert_one(lapdict)
 
 print("Done!")
