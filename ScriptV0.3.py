@@ -20,7 +20,7 @@ laptop_price = soup.find_all('div', class_='price')
 #techland working
 for ln in laptop_Names:
     for li in ln.find_all("a"):
-        name = li.text + ' [techland]'
+        name = li.text + ' [TechLand]'
         lapname.append(name)
 
 for ln in laptop_price:
