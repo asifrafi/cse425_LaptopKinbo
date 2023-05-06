@@ -219,9 +219,11 @@ comb=dict(zip(lapname,lapprice))
 
 myclient = pymongo.MongoClient("mongodb+srv://asiflogin:asif321@cluster0.scqzz.mongodb.net/?retryWrites=true&w=majority")
 mydb = myclient["CSE425"]
-mycol = mydb["laptopKinbo"]
-for x in comb:
-    jsonObject= json.dumps(comb[x], indent = 4) 
-    mycol.insert_one(jsonObject)
+mycol = mydb["laptopKinbo"] 
 
+for x in range(0,1110):
+    lapdict = {"name":lapname[int(x)],"price":lapprice[int(x)]}
+    mycol.insert_one(lapdict)
+
+print(lapprice[10])
 #final

@@ -84,3 +84,4 @@ x=slice(440)
 lapprice =lapprice[x]
 print(len(lapname))
 print(len(lapprice))
+print(lapprice[10])
