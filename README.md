@@ -27,8 +27,9 @@
 
 
 #### Contributor
+Simanta Mostafa <br>
 Asif Haider Rafi <br>
-Simanta Mostafa
+
 #### Academic Disclosure 
 Note: This Is a University Project from North South University <br>
 Course: CSE425 <br> 
@@ -37,8 +38,8 @@ Faculty Member: MMK1 <br>
 Semester: Spring 2023 <br> 
 Licensing: MIT Licensing
 #### Contact 
-If you have any questions or feedback about NSU Ovijog, please contact us at 
-Asif Haider Rafi 
+If you have any questions or feedback about Laptop Kinbo, please contact us at 
+Asif Haider Rafi <br>
 Education Email: asif.rafi1@northsouth.edu <br>
 Personal Email: asifhaiderrafi@protonmail.com
 
