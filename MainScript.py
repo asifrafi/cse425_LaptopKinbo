@@ -27,7 +27,7 @@ def StarTech(l):
     for ln in laptop_price:
         for li in ln.find_all("span"):
             price = li.text
-            priceN =price.replace("৳", "")
+            priceN =price.replace("৳", "") # do not need money sign since it will mess up future works
             
             priceN =price.replace("TBA", "NotAvailable")
             lapprice.append(priceN)
