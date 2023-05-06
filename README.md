@@ -21,10 +21,21 @@
 [Install NPM](https://www.npmjs.com/)
 
 
-Thank you,
-Asif Haider Rafi
-2011758042
+#### Contributor
+Asif Haider Rafi <br>
 Simanta Mostafa
-2011753042
+#### Academic Disclosure 
+Note: This Is a University Project from North South University <br>
+Course: CSE425 <br> 
+Department: ECE Department <br>
+Faculty Member: MMK1 <br>
+Semester: Spring 2023 <br> 
+Licensing: MIT Licensing
+#### Contact 
+If you have any questions or feedback about NSU Ovijog, please contact us at 
+Asif Haider Rafi 
+Education Email: asif.rafi1@northsouth.edu <br>
+Personal Email: asifhaiderrafi@protonmail.com
+
 ### This is still a work in progress project. Will finalize it before June,2023
 
