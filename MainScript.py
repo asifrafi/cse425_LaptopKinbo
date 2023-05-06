@@ -203,8 +203,10 @@ RYANS(link15)
 RYANS(link16)
 
 
-x=slice(1121)
+x=slice(1120)
 lapname=lapname[x]
+
+lapprice=lapprice[x]
 
 print(len(lapname))
 print(len(lapprice))
