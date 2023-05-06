@@ -1,5 +1,5 @@
 
-# Laptop Kinbo- A one stop Solution To buy your desired Laptop
+# Laptop Kinbo
 "Laptop Kinbo" is a web app that aims to provide accurate and up-to-date information on laptop prices and features in Bangladesh. With a focus on helping users make informed decisions about their purchases, the app will scrape data from major retailers like StarTech, Ryans, and Techland, and store it in a MongoDB database. Using Express and Node.js, the app will process this data to suggest laptops based on users' budgets and use cases. Additionally, "Laptop Kinbo" will expose its backend as an API, making it a valuable resource for other websites looking to provide laptop recommendations in Bangladesh. The app will have a simple, user-friendly interface and will not collect any user data. By providing accurate and timely information, "Laptop Kinbo" aims to help users avoid dishonest shop owners and make confident purchases.
 
 
@@ -38,7 +38,7 @@ Faculty Member: MMK1 <br>
 Semester: Spring 2023 <br> 
 Licensing: MIT Licensing
 #### Contact 
-If you have any questions or feedback about Laptop Kinbo, please contact us at 
+If you have any questions or feedback about Laptop Kinbo, please contact us at <br>
 Asif Haider Rafi <br>
 Education Email: asif.rafi1@northsouth.edu <br>
 Personal Email: asifhaiderrafi@protonmail.com
