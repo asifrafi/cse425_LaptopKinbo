@@ -10,7 +10,7 @@
 * Database: MongoDB 
 * Script: Python,PyMongo,BeautifulSoup4
 
-<p style="font-size:140%;text-align: left;font-weight:bold;font-family:times">Operating Environments</p>
+#### Operating Environments
 <p style="text-align: left;font-family:arial;">
 <ul type="disc"> 
   <li><strong>Platform:</strong> Web </li>
