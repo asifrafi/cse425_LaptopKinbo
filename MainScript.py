@@ -85,9 +85,7 @@ def techland(l):
         for li in ln.find_all("span"):
             price = li.text
             priceN =price.replace("৳", "") # do not need money sign since it will mess up future works
-            
-            priceN =price.replace("TBA", "NotAvailable")
-            lapprice.append(price)
+            lapprice.append(priceN)
 
 link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops"
 techland(link)
