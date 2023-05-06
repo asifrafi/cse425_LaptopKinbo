@@ -29,7 +29,6 @@ def StarTech(l):
             price = li.text
             priceN =price.replace("৳", "") # do not need money sign since it will mess up future works
             
-            priceN =price.replace("TBA", "NotAvailable")
             lapprice.append(priceN)
 
 StarTech(link)
