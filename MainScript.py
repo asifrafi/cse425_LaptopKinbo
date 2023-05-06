@@ -20,7 +20,7 @@ def StarTech(l):
     laptop_price = soup.find_all('div', class_='p-item-price')
     for ln in laptop_Names:
         for li in ln.find_all("h4"):
-            name = li.text
+            name = li.text + " [Startech]"
             lapname.append(name)
 
 
@@ -69,5 +69,28 @@ link= "https://www.startech.com.bd/laptop-notebook/laptop?page=18"
 StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=19"
 StarTech(link)
+
+def techland(l):
+    html_texts = requests.get(link).text
+    soup = BeautifulSoup(html_texts, 'lxml')
+    laptop_Names = soup.find_all('div', class_='name')
+    laptop_price = soup.find_all('div', class_='price')
+    for ln in laptop_Names:
+        for li in ln.find_all("a"):
+            name = li.text + " [TechLand]"
+            lapname.append(name)
+
+    for ln in laptop_price:
+
+        for li in ln.find_all("span"):
+            price = li.text
+            priceN =price.replace("৳", "") # do not need money sign since it will mess up future works
+            
+            priceN =price.replace("TBA", "NotAvailable")
+            lapprice.append(price)
+
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops"
+techland(link)
+
 print(lapname)
 print(lapprice)
