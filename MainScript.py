@@ -91,6 +91,49 @@ def techland(l):
 
 link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops"
 techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=2"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=3"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=4"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=5"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=6"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=7"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=8"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=9"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=10"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=11"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=12"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=13"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=14"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=15"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=16"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=17"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=18"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=19"
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=20"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=21"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=22"
+techland(link)
+link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=23"
+techland(link)
 
 print(lapname)
 print(lapprice)
