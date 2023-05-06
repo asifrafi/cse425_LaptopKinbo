@@ -12,7 +12,7 @@ lapname = []
 lapprice = []
 
 
-def soups(l):
+def StarTech(l):
     html_texts = requests.get(l).text
     soup = BeautifulSoup(html_texts, 'lxml')
     
@@ -27,33 +27,47 @@ def soups(l):
     for ln in laptop_price:
         for li in ln.find_all("span"):
             price = li.text
-            lapprice.append(price)
+            priceN =price.replace("৳", "")
+            
+            priceN =price.replace("TBA", "NotAvailable")
+            lapprice.append(priceN)
 
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=2"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=3"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=4"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=5"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=6"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=7"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=8"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=9"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=10"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=11"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=12"
-soups(link)
+StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=13"
-soups(link)
-
+StarTech(link)
+link= "https://www.startech.com.bd/laptop-notebook/laptop?page=14"
+StarTech(link)
+link= "https://www.startech.com.bd/laptop-notebook/laptop?page=15"
+StarTech(link)
+link= "https://www.startech.com.bd/laptop-notebook/laptop?page=16"
+StarTech(link)
+link= "https://www.startech.com.bd/laptop-notebook/laptop?page=17"
+StarTech(link)
+link= "https://www.startech.com.bd/laptop-notebook/laptop?page=18"
+StarTech(link)
+link= "https://www.startech.com.bd/laptop-notebook/laptop?page=19"
+StarTech(link)
 print(lapname)
 print(lapprice)
