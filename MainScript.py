@@ -214,4 +214,10 @@ print(len(lapprice))
 
 comb=dict(zip(lapname,lapprice))
 print(comb)
+
+
+myclient = pymongo.MongoClient("mongodb://localhost:27017/")
+mydb = myclient["rafi"]
+mycol = mydb["customers"]
+mycol.insert(comb)
 #final
