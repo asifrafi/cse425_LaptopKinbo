@@ -20,7 +20,7 @@ laptop_price = soup.find_all('div', class_='price')
 #techland working
 for ln in laptop_Names:
     for li in ln.find_all("a"):
-        name = li.text
+        name = li.text + ' [techland]'
         lapname.append(name)
 
 for ln in laptop_price:
@@ -28,9 +28,7 @@ for ln in laptop_price:
     for li in ln.find_all("span"):
         price = li.text
         priceN =price.replace("৳", "") # do not need money sign since it will mess up future works
-            
-        priceN =price.replace("TBA", "NotAvailable")
-        lapprice.append(price)
+        lapprice.append(priceN)
 
 print(lapname)
 print(lapprice)
