@@ -28,11 +28,11 @@ def StarTech(l):
     for ln in laptop_price:
         for li in ln.find_all("span"):
             price = li.text
-            priceN =price.replace("৳", "") # do not need money sign since it will mess up future works
-            priceN =priceN.replace(",", "") # do not need money sign since it will mess up future works
-            priceN =priceN.replace("TBA", "0") # do not need money sign since it will mess up future works
+            price =price.replace("৳", "") # do not need money sign since it will mess up future works
+            price =price.replace(",", "") # do not need money sign since it will mess up future works
+            price =price.replace("TBA", "0") # do not need money sign since it will mess up future works
             
-            lapprice.append(priceN)
+            lapprice.append(price)
 
 StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=2"
@@ -86,11 +86,11 @@ def techland(l):
 
         for li in ln.find_all("span"):
             price = li.text
-            priceN =price.replace("৳", "") # do not need money sign since it will mess up future works
-            priceN =price.replace(",", "") # do not need money sign since it will mess up future works
+            price =price.replace("৳", "") # do not need money sign since it will mess up future works
+            price =price.replace(",", "") # do not need money sign since it will mess up future works
             
             
-            lapprice.append(priceN)
+            lapprice.append(price)
 
 link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops"
 techland(link)
@@ -167,9 +167,9 @@ def RYANS(link):
         price = ln.text
         price =price.replace("Tk", "")
         price =price.replace(" ", "")
-        priceN =price.replace(",", "") # do not need money sign since it will mess up future works
+        price =price.replace(",", "") # do not need money sign since it will mess up future works
             
-        lapprice.append(priceN)
+        lapprice.append(price)
 
 
 link = "https://www.ryanscomputers.com/category/laptop-all-laptop"
