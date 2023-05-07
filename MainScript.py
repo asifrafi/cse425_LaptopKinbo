@@ -167,9 +167,17 @@ def RYANS(link):
         price = ln.text
         price =price.replace("Tk", "")
         price =price.replace(" ", "")
-        price =price.replace(",", "") # do not need money sign since it will mess up future works
-            
+        price =price.replace(",", "") # do not need money sign since it will mess up future works          
         lapprice.append(price)
+  
+        
+        
+    s= len(lapname)-len(lapprice)
+    for i in range(s):
+        price='TBA'
+        lapprice.append(price)
+            
+        
 
 
 link = "https://www.ryanscomputers.com/category/laptop-all-laptop"
