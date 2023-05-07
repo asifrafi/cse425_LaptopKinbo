@@ -23,6 +23,7 @@ def RYANS(link):
     laptop_Names = soup.find_all('p', class_='card-text p-0 m-0 grid-view-text')
 
     laptop_price = soup.find_all('p', class_='pr-text cat-sp-text pb-1')
+    
 
 
    
@@ -36,12 +37,20 @@ def RYANS(link):
             lapname.append(name)
 
 
-
     for ln in laptop_price:
         price = ln.text
         price =price.replace("Tk", "")
         price =price.replace(" ", "")
+        price =price.replace(",", "") # do not need money sign since it will mess up future works
+            
         lapprice.append(price)
+        
+        
+    s= len(lapname)-len(lapprice)
+    for i in range(s):
+        price='TBA'
+        lapprice.append(price)
+            
         
 
 link = "https://www.ryanscomputers.com/category/laptop-all-laptop"
@@ -85,6 +94,8 @@ RYANS(link16)
 
 
 
-print(len(lapname))
-print(len(lapprice)) 
-#simanta please fix this bug lapname and lap price size doesn't match
+print(lapname)
+print(lapprice)
+
+#print(len(lapname))
+#print(len(lapprice))
