@@ -138,7 +138,7 @@ techland(link)
 link= "https://www.techlandbd.com/shop-laptop-computer/brand-laptops?page=23"
 techland(link)
 
-
+#Needs Some Changes in future
 def RYANS(link):
 
     html_texts = requests.get(link).text
