@@ -172,10 +172,7 @@ def RYANS(link):
   
         
         
-    s= len(lapname)-len(lapprice)
-    for i in range(s):
-        price='TBA'
-        lapprice.append(price)
+
             
         
 
