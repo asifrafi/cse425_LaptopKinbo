@@ -12,7 +12,7 @@ lapname = []
 lapprice = []
 
 
-def selectName(link):
+def selectName(link): #function for passing page links
 
     html_texts = requests.get(link).text
 
