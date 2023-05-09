@@ -5,7 +5,7 @@ import re
 import openpyxl
 from openpyxl import load_workbook
 import json
-
+#script_to_run
 link = "https://www.startech.com.bd/laptop-notebook/laptop"
 
 Laptops = ''
