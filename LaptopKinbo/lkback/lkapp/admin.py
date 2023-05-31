@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Laptops
+from .models import Laptop
 
 
 # Register your models here.
-admin.site.register(Laptops)
+admin.site.register(Laptop)
