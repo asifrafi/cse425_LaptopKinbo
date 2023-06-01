@@ -121,7 +121,7 @@ const PriceRangeForm = () => {
         </div>
         <footer style={{ backgroundColor: 'black', color: 'white', padding: '10px', marginTop: '20px' }}>
           <p style={{ textAlign: 'center' }}>
-            This page is powered by Laptop Kinbo API. If you would like to build your own app using our API, please visit our git Repo for more information.
+            This page is powered by Laptop Kinbo API. If you would like to build your own app using our API, please visitaoi WhitePage for more information.
           </p>
           <p style={{ textAlign: 'center' }}>
             API Documentation: Coming Soon
