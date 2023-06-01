@@ -8,16 +8,17 @@ from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 import pymongo
-
 def load():
     myclient = pymongo.MongoClient("mongodb+srv://asiflogin:asif321@cluster0.scqzz.mongodb.net/?retryWrites=true&w=majority")
     mydb = myclient["CSE425"]
     mycol = mydb["laptopKinbo"] 
-    x= mycol.find()
+    x = mycol.find()
     for d in x:
         serializer = LaptopSerializer(data=d) 
         if serializer.is_valid():
-            serializer.save()
+            
+            if not Laptop.objects.filter(name=d['name']).exists():
+                serializer.save()
 @api_view(['GET', 'POST'])
 def api_list(request):
     if request.method == 'GET':
