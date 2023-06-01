@@ -6,6 +6,7 @@ const PriceRangeForm = () => {
   const [lowerPrice, setLowerPrice] = useState('');
   const [upperPrice, setUpperPrice] = useState('');
   const [isGaming, setIsGaming] = useState(false);
+  const [isMacBook, setIsMacBook] = useState(false);
   const [laptops, setLaptops] = useState([]);
 
   const handleSubmit = async (e) => {
@@ -17,7 +18,14 @@ const PriceRangeForm = () => {
       if (isGaming) {
         apiUrl = `http://127.0.0.1:8000/gaminglaptop/${lowerPrice}/${upperPrice}/`;
       }
-
+      
+      if (isMacBook) {
+        apiUrl = `http://127.0.0.1:8000/mac/${lowerPrice}/${upperPrice}/`;
+      }
+      if (isGaming && isMacBook) {
+        setLaptops([{ id: -1, name: "MacBooks Are Not Meant For Gaming!!", price: "যা নেই তার আবার কিসের দাম" }]);
+        return;
+      }
       const response = await axios.get(apiUrl);
       setLaptops(response.data);
     } catch (error) {
@@ -76,6 +84,14 @@ const PriceRangeForm = () => {
                 onChange={() => setIsGaming(!isGaming)}
                 className="cb"
               />
+             <Form.Field>
+            <Checkbox
+              label="MacBook"
+              checked={isMacBook}
+              onChange={() => setIsMacBook(!isMacBook)}
+              className="cb"
+            />
+          </Form.Field>
             </Form.Field>
             <Button type="submit" color="black" primary className="black-button">
               Search
