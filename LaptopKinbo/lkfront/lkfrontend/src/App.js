@@ -55,7 +55,7 @@ const PriceRangeForm = () => {
                 type="number"
                 value={lowerPrice}
                 onChange={(e) => setLowerPrice(e.target.value)}
-                placeholder="Enter lower price"
+                placeholder="Enter the least ammount of money you want to pay for a Laptop"
                 className="ta"
               />
             </Form.Field>
@@ -65,7 +65,7 @@ const PriceRangeForm = () => {
                 type="number"
                 value={upperPrice}
                 onChange={(e) => setUpperPrice(e.target.value)}
-                placeholder="Enter upper price"
+                placeholder="Enter the most ammount of money you want to pay for a Laptop"
                 className="ta"
               />
             </Form.Field>
