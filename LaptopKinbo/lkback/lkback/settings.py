@@ -18,7 +18,16 @@ ALLOWED_HOSTS = []
 
 
 # Application definition
-
+DATABASES = {
+        'default': {
+            'ENGINE': 'djongo',
+            'NAME': 'laptopKinbo',
+            'ENFORCE_SCHEMA': False,
+            'CLIENT': {
+                'host': 'mongodb+srv://asiflogin:asif321@cluster0.scqzz.mongodb.net/?retryWrites=true&w=majority'
+            }  
+        }
+}
 INSTALLED_APPS = [
     'rest_framework',
     'django.contrib.admin',
