@@ -28,6 +28,17 @@ def api_list(request):
     elif request.method == 'POST':
         
         return request.data  
+@api_view(['GET'])
+def api_game(request, l, h):
+    laptops = Laptop.objects.filter(price__gt=l, price__lt=h)
+
+    gaming_laptops = []
+    for laptop in laptops:
+        if "RTX" in laptop.name.upper() or "GTX" in laptop.name.upper():
+            gaming_laptops.append(laptop)
+
+    serializer = LaptopSerializer(gaming_laptops, many=True)
+    return Response(serializer.data)
 @api_view(['GET', 'POST'])
 def laptops_list(request,l,h):
     
