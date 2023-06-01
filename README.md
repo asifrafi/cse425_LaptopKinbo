@@ -5,8 +5,13 @@
 
 ## Please Read This MarkDown File before running Laptop Kinbo
 #### Tech Stack
-* Frontend: React (Next.js)[Proposed]
-* Backend: Express.js, Node.js [Proposed]
+* Frontend: React (Next.js)
+* Backend: Express.js, Node.js
+* Database: MongoDB 
+* Script: Python,PyMongo,BeautifulSoup4
+#### Tech Stack V2
+* Frontend: React (Next.js)
+* Backend: django,djangorestframework
 * Database: MongoDB 
 * Script: Python,PyMongo,BeautifulSoup4
 
