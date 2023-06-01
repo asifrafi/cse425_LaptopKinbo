@@ -124,7 +124,7 @@ const PriceRangeForm = () => {
             This page is powered by Laptop Kinbo API. If you would like to build your own app using our API, please visit our git Repo for more information.
           </p>
           <p style={{ textAlign: 'center' }}>
-            API Documentation: <a href="https://github.com/asifrafi/cse425_LaptopKinbo">http://WecantAffordHosting/api/docs/</a>
+            API Documentation: Coming Soon
           </p>
         </footer>
       </Container>
