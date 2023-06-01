@@ -56,6 +56,7 @@ const PriceRangeForm = () => {
                 value={lowerPrice}
                 onChange={(e) => setLowerPrice(e.target.value)}
                 placeholder="Enter lower price"
+                className="ta"
               />
             </Form.Field>
             <Form.Field>
@@ -65,6 +66,7 @@ const PriceRangeForm = () => {
                 value={upperPrice}
                 onChange={(e) => setUpperPrice(e.target.value)}
                 placeholder="Enter upper price"
+                className="ta"
               />
             </Form.Field>
             <Form.Field>
@@ -72,6 +74,7 @@ const PriceRangeForm = () => {
                 label="Gaming"
                 checked={isGaming}
                 onChange={() => setIsGaming(!isGaming)}
+                className="cb"
               />
             </Form.Field>
             <Button type="submit" color="black" primary className="black-button">
@@ -100,6 +103,14 @@ const PriceRangeForm = () => {
             </Card.Group>
           )}
         </div>
+        <footer style={{ backgroundColor: 'black', color: 'white', padding: '10px', marginTop: '20px' }}>
+          <p style={{ textAlign: 'center' }}>
+            This page is powered by Laptop Kinbo API. If you would like to build your own app using our API, please visit our git Repo for more information.
+          </p>
+          <p style={{ textAlign: 'center' }}>
+            API Documentation: <a href="https://github.com/asifrafi/cse425_LaptopKinbo">http://WecantAffordHosting/api/docs/</a>
+          </p>
+        </footer>
       </Container>
     </div>
   );
