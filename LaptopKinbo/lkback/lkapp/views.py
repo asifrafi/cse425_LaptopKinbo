@@ -51,6 +51,12 @@ def laptops_list(request,l,h):
     else :
         return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+@api_view(['GET'])
+def mac_list(request, l, h):
+    laptops = Laptop.objects.filter(price__gt=l, price__lt=h, name__icontains="MacBook")
+
+    serializer = LaptopSerializer(laptops, many=True)
+    return Response(serializer.data)
 
 @api_view(['GET', 'PUT', 'DELETE'])
 def api_detail(request, pk):
