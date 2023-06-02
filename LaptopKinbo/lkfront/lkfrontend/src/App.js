@@ -13,18 +13,18 @@ const PriceRangeForm = () => {
     e.preventDefault();
 
     try {
-      //let apiUrl = `http://127.0.0.1:8000/laptopinrange/${lowerPrice}/${upperPrice}/`;
-      let apiUrl = `http://localhost:5000/laptopinrange/${lowerPrice}/${upperPrice}/`;
+      let apiUrl = `http://127.0.0.1:8000/laptopinrange/${lowerPrice}/${upperPrice}/`;
+      //let apiUrl = `http://localhost:5000/laptopinrange/${lowerPrice}/${upperPrice}/`;
 
       if (isGaming) {
-       // apiUrl = `http://127.0.0.1:8000/gaminglaptop/${lowerPrice}/${upperPrice}/`;
-        apiUrl = `http://localhost:5000/gaminglaptop/${lowerPrice}/${upperPrice}/`;
+       apiUrl = `http://127.0.0.1:8000/gaminglaptop/${lowerPrice}/${upperPrice}/`;
+       // apiUrl = `http://localhost:5000/gaminglaptop/${lowerPrice}/${upperPrice}/`;
 
       }
       
       if (isMacBook) {
-       // apiUrl = `http://127.0.0.1:8000/mac/${lowerPrice}/${upperPrice}/`;
-        apiUrl = `http://localhost:5000/mac/${lowerPrice}/${upperPrice}/`;
+       apiUrl = `http://127.0.0.1:8000/mac/${lowerPrice}/${upperPrice}/`;
+        //apiUrl = `http://localhost:5000/mac/${lowerPrice}/${upperPrice}/`;
       }
       if (isGaming && isMacBook) {
         setLaptops([{ id: -1, name: "MacBooks Are Not Meant For Gaming!!", price: "যা নেই তার আবার কিসের দাম" }]);
