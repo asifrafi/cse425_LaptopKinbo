@@ -77,7 +77,7 @@ app.get('/gaminglaptop/:l/:h/', async (req, res) => {
   try {
     const laptops = await LaptopModel.find({
       price: { $gt: req.params.l, $lt: req.params.h },
-      name: { $regex: /rtx|gtx/i },
+      name: { $regex: /RTX|GTX/i },
     });
     res.json(laptops);
   } catch (error) {
@@ -90,7 +90,7 @@ app.get('/mac/:l/:h/', async (req, res) => {
   try {
     const laptops = await LaptopModel.find({
       price: { $gt: req.params.l, $lt: req.params.h },
-      name: { $regex: /macbook/i },
+      name: { $regex: /MacBook/i },
     });
     res.json(laptops);
   } catch (error) {
