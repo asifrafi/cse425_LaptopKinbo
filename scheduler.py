@@ -1,9 +1,10 @@
 import schedule
 import time
+from subprocess import call
 def importdb() :
-    print("lala")
+    call("python","MainScript.py")
 
-schedule.every().day().at("10:30").do(importdb)
+schedule.every().day().at("12:01").do(importdb)
 
 while 1:
     schedule.run_pending()

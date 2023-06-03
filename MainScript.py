@@ -221,7 +221,7 @@ lapname=lapname[x]
 lapprice=lapprice[x]
 
 
-
+'''
 comb=dict(zip(lapname,lapprice))
 
 
@@ -233,6 +233,6 @@ mycol = mydb["laptopKinbo"]
 for x in range(0,1110):
     lapdict = {"name":lapname[int(x)],"price":int(lapprice[int(x)])}
     mycol.insert_one(lapdict)
-
+'''
 print("Done!")
 #final
