@@ -10,15 +10,15 @@ Laptop Kinbo is now live at : <a href="https://www.laptopkinbo.com/"> https://ww
 
 * api_game - This API endpoint supports GET method with two parameters l and h.
   GET: It retrieves a list of gaming laptops within the specified price range. The API filters laptops based on their price using price__gt (greater than) and price__lt (less than) filters. It further filters the laptops by checking if their name contains "RTX" or "GTX" (case-insensitive) to identify gaming laptops. The filtered laptops are serialized using LaptopSerializer and returned as a response.
-  API: <a href="https://www.laptopkinbo.com/gaminglaptop/<int:l>/<int:h>/"> https://www.laptopkinbo.com/gaminglaptop/<int:l>/<int:h>/</a>
+  API: <a href="https://www.laptopkinbo.com/gaminglaptop//10000/50000/"> https://www.laptopkinbo.com/gaminglaptop/<int:l>/<int:h>/</a>
 
 * laptops_list - This API endpoint supports GET and POST methods with two parameters l and h.
   GET: It retrieves a list of laptops within the specified price range. Similar to api_game, it filters laptops based on their price using price__gt and price__lt filters. The filtered laptops are serialized using LaptopSerializer and returned as a response.
   POST: This method is not implemented in the provided code snippet. You can customize it to handle the creation of new laptop entries within the specified price range.
-  API: <a href="https://www.laptopkinbo.com/laptopinrange/<int:l>/<int:h>/"> https://www.laptopkinbo.com/laptopinrange/<int:l>/<int:h>/ </a>
+  API: <a href="https://www.laptopkinbo.com/laptopinrange//100000/500000/"> https://www.laptopkinbo.com/laptopinrange/<int:l>/<int:h>/ </a>
 * mac_list - This API endpoint supports GET method with two parameters l and h.
   GET: It retrieves a list of MacBook laptops within the specified price range. The API filters laptops based on their price using price__gt and price__lt filters and further filters them by checking if their name contains "MacBook" (case-insensitive). The filtered laptops are serialized using LaptopSerializer and returned as a response.
-  API: <a href="https://www.laptopkinbo.com/mac/<int:l>/<int:h>/"> https://www.laptopkinbo.com/mac/<int:l>/<int:h>/</a>
+  API: <a href="https://www.laptopkinbo.com/mac/10000/50000/"> https://www.laptopkinbo.com/mac/<int:l>/<int:h>/</a>
 
 <b> Remember, L=Lower limit of budge. <br> H= Higher limit of budget.<br> Both are 32 bit integrs</b>
 
