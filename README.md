@@ -6,28 +6,29 @@ Laptop Kinbo is now live at : <a href="https://www.laptopkinbo.com/"> https://ww
 * api_list - This API endpoint supports GET and POST methods.
   GET: It retrieves a list of all laptops available in the Bangladeshi market. It uses the LaptopSerializer to serialize the data and returns a response containing the serialized data of all laptops.
   POST: This method is not implemented in the provided code snippet. You can customize it to handle the creation of new laptop entries.
+  API: <a href="https://www.laptopkinbo.com/laptop/kinbo/api/"> https://www.laptopkinbo.com/laptop/kinbo/api/ </a>
 
 * api_game - This API endpoint supports GET method with two parameters l and h.
   GET: It retrieves a list of gaming laptops within the specified price range. The API filters laptops based on their price using price__gt (greater than) and price__lt (less than) filters. It further filters the laptops by checking if their name contains "RTX" or "GTX" (case-insensitive) to identify gaming laptops. The filtered laptops are serialized using LaptopSerializer and returned as a response.
+  API: <a href="https://www.laptopkinbo.com/gaminglaptop/<int:l>/<int:h>/"> https://www.laptopkinbo.com/gaminglaptop/<int:l>/<int:h>/</a>
 
 * laptops_list - This API endpoint supports GET and POST methods with two parameters l and h.
   GET: It retrieves a list of laptops within the specified price range. Similar to api_game, it filters laptops based on their price using price__gt and price__lt filters. The filtered laptops are serialized using LaptopSerializer and returned as a response.
   POST: This method is not implemented in the provided code snippet. You can customize it to handle the creation of new laptop entries within the specified price range.
-
+  API: <a href="https://www.laptopkinbo.com/laptopinrange/<int:l>/<int:h>/"> https://www.laptopkinbo.com/laptopinrange/<int:l>/<int:h>/ </a>
 * mac_list - This API endpoint supports GET method with two parameters l and h.
   GET: It retrieves a list of MacBook laptops within the specified price range. The API filters laptops based on their price using price__gt and price__lt filters and further filters them by checking if their name contains "MacBook" (case-insensitive). The filtered laptops are serialized using LaptopSerializer and returned as a response.
+  API: <a href="https://www.laptopkinbo.com/mac/<int:l>/<int:h>/"> https://www.laptopkinbo.com/mac/<int:l>/<int:h>/</a>
 
-* api_detail - This API endpoint supports GET, PUT, and DELETE methods with a parameter pk.
- GET: It retrieves the details of a specific laptop identified by the pk (primary key). The laptop object is serialized using LaptopSerializer and returned as a response.
- PUT: It updates the details of a specific laptop identified by the pk. The updated data is provided in the request body, and the API saves the changes if the data is valid. The updated laptop object is serialized using LaptopSerializer and returned as a response.
- DELETE: It deletes a specific laptop identified by the pk. The API deletes the laptop object and returns a response with status HTTP 204 No Content.
+<b> Remember, L=Lower limit of budge. <br> H= Higher limit of budget.<br> Both are 32 bit integrs</b>
+
 
 ## Please Read This MarkDown File before running Laptop Kinbo
 #### Tech Stack
 * Frontend: React (Next.js)
 * Backend: Express.js, Node.js
 * Database: MongoDB 
-* Script: Python,PyMongo,BeautifulSoup4
+* Script: Python,PyMongo,BeautifulSoup4,Sheduler
 #### Tech Stack V2
 * Frontend: React (Next.js)
 * Backend: django,djangorestframework
