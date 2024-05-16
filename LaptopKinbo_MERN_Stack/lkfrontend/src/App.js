@@ -42,7 +42,7 @@ const PriceRangeForm = () => {
       <div style={{ position: 'relative', marginBottom: '2rem' }}>
         <Menu inverted color="black">
           <Menu.Item header as="h1">
-            Laptop Kinbo
+            Laptop Kinbo AI 
           </Menu.Item>
         </Menu>
         <Container>

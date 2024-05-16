@@ -21,22 +21,25 @@ def StarTech(l):
     laptop_price = soup.find_all('div', class_='p-item-price')
     for ln in laptop_Names:
         for li in ln.find_all("h4"):
-            name = li.text + " [Startech]"
+            name = li.text
             lapname.append(name)
 
 
     for ln in laptop_price:
         for li in ln.find_all("span"):
-            price = li.text
-            price =price.replace("৳", "") # do not need money sign since it will mess up future works
-            price =price.replace(",", "") # do not need money sign since it will mess up future works
-            price =price.replace("TBA", "0") # do not need money sign since it will mess up future works
-            
-            lapprice.append(price)
+            if not li.has_attr("class") or "price-new" in li["class"]:
+                price = li.text
+                price = price.replace("৳", "")  # Remove money sign
+                price = price.replace(",", "")  # Remove commas
+                price = price.replace("TBA", "0")  # Replace TBA with 0
+                lapprice.append(price)
+
 
 StarTech(link)
+
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=2"
 StarTech(link)
+
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=3"
 StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=4"
@@ -72,6 +75,7 @@ StarTech(link)
 link= "https://www.startech.com.bd/laptop-notebook/laptop?page=19"
 StarTech(link)
 
+'''
 def techland(l):
     html_texts = requests.get(link).text
     soup = BeautifulSoup(html_texts, 'lxml')
@@ -213,15 +217,15 @@ RYANS(link13)
 RYANS(link14)
 RYANS(link15)
 RYANS(link16)
+'''
 
-
-x=slice(1120)
+x=slice(380)
 lapname=lapname[x]
 
 lapprice=lapprice[x]
 
 
-'''
+
 comb=dict(zip(lapname,lapprice))
 
 
@@ -230,9 +234,11 @@ myclient = pymongo.MongoClient("mongodb+srv://asiflogin:asif321@cluster0.scqzz.m
 mydb = myclient["CSE425"]
 mycol = mydb["laptopKinbo"] 
 
-for x in range(0,1110):
+for x in range(0,380):
     lapdict = {"name":lapname[int(x)],"price":int(lapprice[int(x)])}
     mycol.insert_one(lapdict)
-'''
+
+print(len(lapprice))
+print(len(lapname))
 print("Done!")
 #final
